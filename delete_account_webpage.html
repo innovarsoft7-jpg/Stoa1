@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Cuenta - Stoa Fisioterapia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #442F1F, #B6A593);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .warning-card {
+            border-left: 5px solid #e74c3c;
+            background-color: #fdf2f2;
+        }
+        
+        .warning-card h2 {
+            color: #c0392b;
+            margin-bottom: 15px;
+        }
+        
+        .info-card h2 {
+            color: #2C5F41;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #2C5F41, #4a7c59);
+            color: white;
+        }
+        
+        .contact-card h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-method:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .contact-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        
+        .contact-info h3 {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        
+        .contact-info p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 0.9em;
+        }
+        
+        .form-container {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2C5F41;
+        }
+        
+        input[type="email"], 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2C5F41;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: #2C5F41;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #1e4a32;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Eliminar Mi Cuenta</h1>
+            <p>Stoa Fisioterapia - Solicitud de Eliminación de Datos</p>
+        </div>
+        
+        <div class="card warning-card">
+            <h2>⚠️ Advertencia Importante</h2>
+            <p><strong>La eliminación de tu cuenta es permanente e irreversible.</strong></p>
+            <p>Una vez procesada tu solicitud:</p>
+            <ul>
+                <li>Perderás acceso a tu cuenta inmediatamente</li>
+                <li>Se eliminarán todos tus datos personales</li>
+                <li>Se cancelarán citas futuras automáticamente</li>
+                <li>No podrás recuperar tu historial médico</li>
+                <li>Deberás crear una cuenta nueva si decides regresar</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>📋 Datos que se Eliminarán</h2>
+            <p>Los siguientes datos serán eliminados permanentemente de nuestros sistemas:</p>
+            
+            <h3>Información Personal:</h3>
+            <ul>
+                <li>Nombre completo y datos de contacto</li>
+                <li>Fecha de nacimiento y género</li>
+                <li>Dirección y teléfono</li>
+                <li>Email y credenciales de acceso</li>
+            </ul>
+            
+            <h3>Información Médica:</h3>
+            <ul>
+                <li>Formularios de evaluación completados</li>
+                <li>Historial de lesiones y tratamientos</li>
+                <li>Notas de fisioterapeutas</li>
+                <li>Fotografías o videos relacionados</li>
+            </ul>
+            
+            <h3>Historial de Citas:</h3>
+            <ul>
+                <li>Citas pasadas y futuras</li>
+                <li>Evaluaciones y resultados</li>
+                <li>Comunicaciones con fisioterapeutas</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>📝 Cómo Solicitar la Eliminación</h2>
+            <p>Para solicitar la eliminación de tu cuenta, completa el siguiente formulario. Tu solicitud será procesada en un plazo de <strong>7-14 días hábiles</strong>.</p>
+            
+            <div class="form-container">
+                <form action="mailto:soporte@stoafisioterapia.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="email">Email de la cuenta a eliminar:</label>
+                        <input type="email" id="email" name="email" required placeholder="tu-email@ejemplo.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motivo">Motivo de eliminación (opcional):</label>
+                        <textarea id="motivo" name="motivo" placeholder="Cuéntanos por qué deseas eliminar tu cuenta..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Enviar Solicitud por Email</button>
+                </form>
+            </div>
+            
+            <p><small><strong>Nota:</strong> También puedes contactarnos directamente usando cualquiera de los métodos de contacto que aparecen abajo.</small></p>
+        </div>
+        
+        <div class="card contact-card">
+            <h2>💬 Contacto Directo</h2>
+            <p>Si necesitas asistencia o tienes preguntas, contáctanos:</p>
+            
+            <a href="mailto:soporte@stoafisioterapia.com?subject=Solicitud%20de%20Eliminación%20de%20Cuenta&body=Hola,%0A%0ASolicito%20la%20eliminación%20de%20mi%20cuenta%20de%20Stoa%20Fisioterapia.%0A%0AEmail%20de%20la%20cuenta:%20%0AMotivo%20(opcional):%20%0A%0AGracias." class="contact-method">
+                <div class="contact-icon">📧</div>
+                <div class="contact-info">
+                    <h3>Email de Soporte</h3>
+                    <p>soporte@stoafisioterapia.com</p>
+                </div>
+            </a>
+            
+            <a href="tel:+5247312345567" class="contact-method">
+                <div class="contact-icon">📞</div>
+                <div class="contact-info">
+                    <h3>Teléfono</h3>
+                    <p>+52 (473) 123-4567</p>
+                </div>
+            </a>
+            
+            <a href="https://wa.me/5247312345567?text=Hola,%20solicito%20información%20sobre%20la%20eliminación%20de%20mi%20cuenta%20de%20Stoa%20Fisioterapia." class="contact-method">
+                <div class="contact-icon">💬</div>
+                <div class="contact-info">
+                    <h3>WhatsApp</h3>
+                    <p>Chat directo</p>
+                </div>
+            </a>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-top: 15px;">
+                <p><strong>Horario de atención:</strong><br>
+                Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+                Tiempo de respuesta: 24-48 horas</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 Stoa Fisioterapia. Todos los derechos reservados.</p>
+            <p>Comprometidos con la privacidad y protección de tus datos personales.</p>
+        </div>
+    </div>
+</body>
+</html>
